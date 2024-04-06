@@ -1,4 +1,4 @@
-script.Parent.Touched:Connect(function(hit)
+function speedUp(hit)
 	local h = hit.Parent:FindFirstChild("Humanoid") -- gets the Humanoid of the player that touched it, h is our variable to get the humanoid.
 	if h ~= nil then
 		h.Health = 0
@@ -7,4 +7,6 @@ script.Parent.Touched:Connect(function(hit)
 		-- 16 is the set speed of everyone before they get the speedboost
 		-- 50 is the set jump of everyone before they touch the jumpboost block
 	end
-end)
+end
+
+script.Parent.Touched:Connect()
