@@ -1,4 +1,4 @@
-function speedUp(hit)
+function killPerson(hit)
 	local h = hit.Parent:FindFirstChild("Humanoid") -- gets the Humanoid of the player that touched it, h is our variable to get the humanoid.
 	if h ~= nil then
 		h.Health = 0
@@ -9,4 +9,4 @@ function speedUp(hit)
 	end
 end
 
-script.Parent.Touched:Connect()
+script.Parent.Touched:Connect(killPerson)
