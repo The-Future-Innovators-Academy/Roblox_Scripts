@@ -12,6 +12,8 @@ local incrementY = distance.Y/travellime
 local incrementZ = distance.Z/travelTime
 local timer = 0
 local forward = true
+start.Transparency = 1
+finish.Transparency = 1
 
 —- Moves the platform
 
