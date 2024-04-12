@@ -9,7 +9,7 @@ local distance = finish.Position - start.Position
 local travelTime = 360
 local incrementX = distance.X/travelTime
 local incrementY = distance.Y/travellime
-local incrementZ = distance.ZtravelTime
+local incrementZ = distance.Z/travelTime
 local timer = 0
 
 —- Moves the platform
