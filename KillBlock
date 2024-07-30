@@ -1,0 +1,8 @@
+--Destroys any character upon touch
+function destroyCharacter(object)
+	--only runs IF part is touching a player
+	if object.Parent and object.Parent:FindFirstChild("Humanoid") then
+		object.Parent.Humanoid.Health = 0
+	end
+end
+script.Parent.Touched:Connect(destroyCharacter)
